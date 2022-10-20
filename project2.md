@@ -50,7 +50,7 @@
 ### - Opened a new configuration file in Nginx’s *sites-available* directory:
 `sudo nano /etc/nginx/sites-available/projectLEMP`
 
-### - Pasted in the bare-bones configuration as shown below:
+### - Pasted in, the bare-bones configuration as shown below:
 ![Site comfiguration](./images\config-nginx.PNG)
 
 ### - Activated the configuration by linking to the config file from Nginx’s *sites-enabled* directory:
@@ -98,7 +98,7 @@
 ### -  Created a new user and granted full privileges on the database using the following codes shown below:
 ![create user](./images\create-user1.PNG)
 
-### - GAve the user permission over the example_database database:
+### - Gave the user permission over the example_database database:
 ![permit user](./images\create-user2.PNG)
 
 ### -  Logged in to the MySQL console again using the custom user credentials:
@@ -134,4 +134,4 @@
 ![update table](./images\site-update4.PNG)
 
 ### This is an indication that the PHP environment is ready to connect and interact with your MySQL server.
-### This PBL project has further helped in making me to understand LEMP as a WEB STACK technology and its usefulness in modern day software production. 
+### This PBL project has further helped in making me to understand LEMP as a WEB STACK technology and its usefulness in modern day software production.
