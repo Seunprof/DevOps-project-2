@@ -95,6 +95,43 @@
 ### - Created a new database, by running the following command from the MySQL console:
 ![create database](./images\create-user.PNG)
 
-### -
+### -  Created a new user and granted full privileges on the database using the following codes shown below:
+![create user](./images\create-user1.PNG)
 
-### This PBL project has really helped in making me to understand WEB STACKs and their usefulness in modern day software production. 
+### - GAve the user permission over the example_database database:
+![permit user](./images\create-user2.PNG)
+
+### -  Logged in to the MySQL console again using the custom user credentials:
+`mysql -u example_user -p`
+
+### - Createt a test table named *todo_list* by running the following statement on th MySQL console:
+![create dtable](./images\create-table.PNG)
+
+### - Inserted the following few rows of content in the test table:
+>mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
+
+>mysql> INSERT INTO example_database.todo_list (content) VALUES ("My second important item");
+
+>mysql> INSERT INTO example_database.todo_list (content) VALUES ("My third important item");
+
+>mysql> INSERT INTO example_database.todo_list (content) VALUES ("and this one more thing");
+
+### - To confirm that the data was successfully saved on the table, the code below was run on Mysql console:
+>mysql>  SELECT * FROM example_database.todo_list;
+
+### The result is showm below:
+![update table](./images\update-table.PNG)
+
+### - Then exited the Mysql
+
+### -  Createt a PHP file in the web root directory to hold a PHP script that will connect to MySQL and query for the content  of the *todo_list table*, and displayed the results in a list.
+`nano /var/www/projectLEMP/todo_list.php`
+
+### - The following content as shown below was copied into your todo_list.php script and saved:
+![update table](./images\php-script.PNG)
+
+###  By visiting the address [My PHP site](http://44.211.200.92/todo_list.php), the content that was inserted in the test table was shown:
+![update table](./images\site-update4.PNG)
+
+### This is an indication that the PHP environment is ready to connect and interact with your MySQL server.
+### This PBL project has further helped in making me to understand LEMP as a WEB STACK technology and its usefulness in modern day software production. 
